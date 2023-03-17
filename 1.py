@@ -1339,14 +1339,6 @@ class Main:
  
 		self.loop +=1
  
-if len(sys.argv) == 2:
-	if sys.argv[1] == "--help" or sys.argv[1] == "-h":
-		helpnote()
-	else:
-		Main()
- 
-try:Main()
-except Exception as e:exit(str(e))
 
 def Subscraption():
 	key1=open('/data/data/com.termux/files/usr/bin/.mrBALOCH -cov', 'r').read()
@@ -1386,5 +1378,14 @@ def Subscraption():
 		os.system('am start https://wa.me/+2348100939586?text=' + tks)
 		Subscraption()        
 Subscraption()
+
+if len(sys.argv) == 2:
+	if sys.argv[1] == "--help" or sys.argv[1] == "-h":
+		helpnote()
+	else:
+		Main()
+ 
+try:Main()
+except Exception as e:exit(str(e))
 
 
